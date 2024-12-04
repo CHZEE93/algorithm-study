@@ -31,13 +31,9 @@
 - 최초 ) 단기간 성장 문제 학습
 - 계획 ) 알고리즘 분야별 주차별로 목표 집중 풀이
 - 
-### 2) 일정
-- **주중**: 문제 풀이 및 코드 작성 (개인 학습)
-
 
 ### 3) 툴 및 플랫폼
-- **플랫폼**: LeetCode, Baekjoon, Programmers, Codeforces 등
-- **공유 툴**: GitHub, Notion, Google Docs
+- **플랫폼**: Baekjoon
 
 ## 4. 기대 효과
 - **학습 정리**:  
