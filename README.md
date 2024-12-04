@@ -48,7 +48,7 @@
 
 # 목표 1) 단기간 성장 99개
 
-- [문제집 링크](https://www.acmicpc.net/workbook/view/4349)
+- [문제집 링크](https://www.acmicpc.net/workbook/view/7698)
 - **기간:** 2024/12 ~ 2024/02
 - **진행 방식:** 하루에 하나씩 문제를 풀며, 풀지 못한 경우라도 개인이 알아서 리뷰 진행
 
