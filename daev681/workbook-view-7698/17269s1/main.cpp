@@ -54,12 +54,12 @@ BOJ IN
 예제 출력 3 
 1%
 출처 */
-
 #include <iostream>
+#include <vector>
 #include <map>
 #include <string>
-int main(void){
 
+int main() {
     std::map<char, int> alphabetStrokes = {
         {'A', 3}, {'B', 2}, {'C', 1}, {'D', 2}, {'E', 4}, {'F', 3}, {'G', 1},
         {'H', 3}, {'I', 1}, {'J', 1}, {'K', 3}, {'L', 1}, {'M', 3}, {'N', 2},
@@ -67,10 +67,39 @@ int main(void){
         {'V', 1}, {'W', 1}, {'X', 2}, {'Y', 2}, {'Z', 1}
     };
 
-    int n , m;
-    string s1 , s2;
+    int n, m;
+    std::string s1, s2, s3;
     std::cin >> n >> m;
     std::cin >> s1 >> s2;
+
+
+    for (int i = 0; i < n || i < m; i++) {
+        if (i < n) {
+            s3 += s1[i];
+        }
+        if (i < m) {
+            s3 += s2[i];
+        }
+    }
+
+    std::vector<int> numbers;
+
+    for(char c : s3){
+        numbers.push_back(alphabetStrokes[c]);
+    }
+
+    while (numbers.size() > 2) {
+        std::vector<int> newNumbers;
+        for (size_t i = 0; i < numbers.size() - 1; i++) {
+            int sum = numbers[i] + numbers[i + 1];
+            newNumbers.push_back(sum % 10); 
+        }
+        numbers = newNumbers; 
+    }
+
+
+    int result = numbers[0] * 10 + numbers[1]; // 두 숫자를 결합
+    std::cout << result << "%" << std::endl;
 
 
     return 0;
