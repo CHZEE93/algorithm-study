@@ -32,6 +32,10 @@ KBS1
 KBS2
 예제 출력 1 
 33
+<<<<<<< HEAD
+=======
+
+>>>>>>> a88db4572c0c1255915f56333d5c3e9cf9e0ca0e
 예제 입력 2 
 4
 ABC1
@@ -40,6 +44,10 @@ KBS2
 KBS1
 예제 출력 2 
 11144411144
+<<<<<<< HEAD
+=======
+
+>>>>>>> a88db4572c0c1255915f56333d5c3e9cf9e0ca0e
 예제 입력 3 
 4
 ABC1
@@ -49,6 +57,7 @@ KBS1
 예제 출력 3 
 33144413
 
+<<<<<<< HEAD
  */
 
 #include <iostream>
@@ -70,4 +79,44 @@ int main() {
 
 
   return 0;
+=======
+*/
+
+#include <iostream>
+#include <vector>
+using namespace std;
+int main() {
+    int n;
+    string s;
+    vector<string> v;
+    cin >> n;
+    for(int i = 0; i < n; i++){
+        cin >> s;
+        v.push_back(s);
+    }
+    
+    int index1 = -1;
+    int index2 = -1;
+    for(int i =0; i < v.size(); i++){
+        if(v[i] == "KBS1"){
+            index1 = i;
+        }else if(v[i] == "KBS2"){
+            index2 = i;
+        }
+    }
+    string result = "";
+
+    for (int i = 0; i <= index1 - 1; i++) result += "1"; // KBS1까지 이동
+    for (int i = 0; i <= index1 - 1; i++) result += "4"; // KBS1을 맨 앞으로 이동
+
+  
+    if (index2 > index1) index2++;
+
+  
+    for (int i = 0; i <= index2 - 1; i++) result += "1"; // KBS2까지 이동
+    for (int i = 0; i <= index2 - 1; i++) result += "4"; // KBS2를 두 번째로 이동
+
+ cout << result << endl;
+    return 0;
+>>>>>>> a88db4572c0c1255915f56333d5c3e9cf9e0ca0e
 }

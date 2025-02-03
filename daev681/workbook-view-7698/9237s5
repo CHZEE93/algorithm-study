@@ -1,0 +1,26 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    int N;
+    cin >> N;
+    
+    vector<int> trees(N);
+    for (int i = 0; i < N; i++) {
+        cin >> trees[i];
+    }
+
+    sort(trees.rbegin(), trees.rend());
+
+    int latest_day = 0;
+    for (int i = 0; i < N; i++) {
+        int day_to_grow = i + 1 + trees[i];  
+        latest_day = max(latest_day, day_to_grow);
+    }
+
+    cout << latest_day << endl;
+    return 0;
+}
