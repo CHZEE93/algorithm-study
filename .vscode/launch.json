@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/algorithm-study/daev681/kimtaewon",
-      "program": "c:/algorithm-study/daev681/kimtaewon/build/Debug/outDebug",
+      "cwd": "c:/algorithm-study/daev681/kimtaewon/2",
+      "program": "c:/algorithm-study/daev681/kimtaewon/2/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
