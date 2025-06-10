@@ -18,9 +18,27 @@ H, W, N, M이 공백으로 구분되어 주어진다. (0 < H, W, N, M ≤ 50,000
 */
 
 #include <iostream>
-#include <string>
+
 int main()
 {
-    
+    // 입출력 최적화 (선택 사항이지만 경쟁 프로그래밍에서 권장)
+    std::ios_base::sync_with_stdio(false);
+    std::cin.tie(NULL);
 
+    long long W; // 문제 설명에 따라: 행마다 W개씩 (열의 수)
+    long long H; // 문제 설명에 따라: H행에 걸쳐 (행의 수)
+    long long N; // 세로 거리두기 (행 간격)
+    long long M; // 가로 거리두기 (열 간격)
+
+    std::cin >> H >> W >> N >> M; 
+
+    long long count_H = (H - 1) / (N + 1) + 1;
+    long long count_W = (W - 1) / (M + 1) + 1;
+
+
+    long long answer = count_H * count_W;
+
+    std::cout << answer << std::endl;
+
+    return 0; 
 }
