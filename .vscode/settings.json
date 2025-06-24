@@ -111,6 +111,9 @@
     "typeinfo": "cpp",
     "variant": "cpp",
     "map": "cpp",
-    "set": "cpp"
+    "set": "cpp",
+    "cstdarg": "cpp",
+    "fstream": "cpp",
+    "sstream": "cpp"
   }
 }
